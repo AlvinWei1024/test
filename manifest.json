@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "OA系统通知中心",
+  "description": "shou notifications",
+  "version": "1.0",
+
+  "background": {
+    // "scripts": ["js/app.js"],
+    "page":"backPage.html"
+  },
+  "permissions": [
+  "background",
+   "notifications",
+    "https://secure.flickr.com/",
+    // "http://localhost:8080/*",
+    "http://16.64.36.50/*",
+    "http://oa.eastsea.gov.cn/*",
+    "contextMenus"
+  ]
+  ,"browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  }
+}
